@@ -1,11 +1,7 @@
 ﻿using eTickets.Data;
-using eTickets.Data.Base;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace eTickets.Models
 {
@@ -40,7 +36,6 @@ namespace eTickets.Models
         [Display(Name = "Select a category")]
         [Required(ErrorMessage = "Movie category is required")]
         public MovieCategory MovieCategory { get; set; }
-
         //Relationships
         [Display(Name = "Select actor(s)")]
         [Required(ErrorMessage = "Movie actor(s) is required")]
